@@ -33,12 +33,23 @@ TLDRify is a sleek, minimal web app that summarizes and organizes content from Y
 | Hosting    | Vercel                                        |
 | Optional   | LangChain for semantic search                 |
 
+## 🔗 Links
+
+- **Live Demo**: [tldr-ify.vercel.app](https://tldr-ify.vercel.app)
+- **GitHub Repository**: [Shantanu-Tiwari/TLDRify](https://github.com/Shantanu-Tiwari/TLDRify)
+
 ---
+
+## 📱 Pages
+
+- **Home** (`/`) - Main landing page with features and CTA
+- **About** (`/about`) - Information about TLDRify, our mission, and story
+- **Privacy** (`/privacy`) - Privacy policy and data handling information
 
 ## 🚀 Getting Started
 
 ### 1. Clone the repo
 
 ```bash
-git clone https://github.com/yourusername/tldrify.git
-cd tldrify
+git clone https://github.com/Shantanu-Tiwari/TLDRify.git
+cd TLDRify

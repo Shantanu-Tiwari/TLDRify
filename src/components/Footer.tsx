@@ -6,20 +6,22 @@ const Footer = () => {
           © 2025 TLDRify
         </p>
         <div className="flex space-x-8">
-          <a 
-            href="#" 
+          <a
+            href="/about"
             className="text-sm text-muted-foreground hover:text-foreground transition-colors duration-150"
           >
             About
           </a>
-          <a 
-            href="#" 
+          <a
+            href="https://github.com/Shantanu-Tiwari/TLDRify"
+            target="_blank"
+            rel="noopener noreferrer"
             className="text-sm text-muted-foreground hover:text-foreground transition-colors duration-150"
           >
             GitHub
           </a>
-          <a 
-            href="#" 
+          <a
+            href="/privacy"
             className="text-sm text-muted-foreground hover:text-foreground transition-colors duration-150"
           >
             Privacy
