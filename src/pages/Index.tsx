@@ -6,6 +6,7 @@ import WhyTLDRifySection from "@/components/WhyTLDRifySection";
 import SupportedContentSection from "@/components/SupportedContentSection";
 import CTASection from "@/components/CTASection";
 import Footer from "@/components/Footer";
+import ScrollToTopButton from "@/components/ScrollToTopButton";
 
 const Index = () => {
   return (
@@ -18,6 +19,7 @@ const Index = () => {
       <SupportedContentSection />
       <CTASection />
       <Footer />
+      <ScrollToTopButton />
     </div>
   );
 };
