@@ -22,6 +22,14 @@ const HowItWorksSection = () => {
   return (
     <section className="py-24 px-6">
       <div className="max-w-6xl mx-auto">
+        <div className="text-center mb-16">
+          <h2 className="text-4xl font-bold tracking-tight mb-4">
+            How it works?
+          </h2>
+          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+            Get to the point in seconds with our AI-powered summarization
+          </p>
+        </div>
         <div className="grid md:grid-cols-3 gap-12">
           {steps.map((step, index) => {
             const IconComponent = step.icon;
