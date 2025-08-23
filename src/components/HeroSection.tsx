@@ -2,8 +2,18 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight, Link } from "lucide-react";
 
 const HeroSection = () => {
+  const scrollToSection = (sectionId: string) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start',
+      });
+    }
+  };
+
   return (
-    <section className="min-h-screen flex items-center justify-center px-6 py-20">
+    <section className="min-h-screen flex items-center justify-center px-6 py-20 pt-32">
       <div className="max-w-7xl mx-auto w-full">
         <div className="grid lg:grid-cols-5 gap-16 items-center">
           {/* Left Content */}
@@ -21,7 +31,11 @@ const HeroSection = () => {
               <Button size="lg" className="font-medium">
                 Try TLDRify
               </Button>
-              <Button variant="link" className="font-medium p-0 h-auto underline-offset-8">
+              <Button 
+                variant="link" 
+                className="font-medium p-0 h-auto underline-offset-8"
+                onClick={() => scrollToSection('how-it-works')}
+              >
                 How it works
               </Button>
             </div>
