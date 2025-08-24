@@ -13,22 +13,7 @@ const InsightPreviewSection = () => {
             </div>
           </div>
 
-          {/* Tag Filters */}
-          {/* <div className="flex flex-wrap gap-3 mb-8 items-center ">
-            <div className=" flex flex-1 min-w-[90px] items-center justify-center px-3 py-1.5 bg-primary text-primary-foreground rounded-lg text-sm font-medium">
-              All
-            </div>
-            <div className=" flex flex-1 min-w-[90px] items-center justify-center px-3 py-1.5 bg-background/10 text-background/70 rounded-lg text-sm hover:bg-background/20 transition-colors cursor-pointer">
-              Articles
-            </div>
-            <div className=" flex flex-1 min-w-[90px] items-center justify-center px-3 py-1.5 bg-background/10 text-background/70 rounded-lg text-sm hover:bg-background/20 transition-colors cursor-pointer">
-              Videos
-            </div>
-            <div className=" flex flex-1 min-w-[90px] items-center justify-center px-3 py-1.5 bg-background/10 text-background/70 rounded-lg text-sm hover:bg-background/20 transition-colors cursor-pointer">
-              Research
-            </div>
-          </div> */}
-
+            {/* New Tag Filters (replaced old flex layout to fix overflow issue) */}
           <div className="max-w-4xl mx-auto mb-8">
             <div
               className="grid gap-3"
@@ -48,6 +33,23 @@ const InsightPreviewSection = () => {
               </div>
             </div>
           </div>
+ 
+          {/* Previous implementation (commented out for reference) */}
+
+          {/* <div className="flex flex-wrap gap-3 mb-8 items-center ">
+            <div className=" flex flex-1 min-w-[90px] items-center justify-center px-3 py-1.5 bg-primary text-primary-foreground rounded-lg text-sm font-medium">
+              All
+            </div>
+            <div className=" flex flex-1 min-w-[90px] items-center justify-center px-3 py-1.5 bg-background/10 text-background/70 rounded-lg text-sm hover:bg-background/20 transition-colors cursor-pointer">
+              Articles
+            </div>
+            <div className=" flex flex-1 min-w-[90px] items-center justify-center px-3 py-1.5 bg-background/10 text-background/70 rounded-lg text-sm hover:bg-background/20 transition-colors cursor-pointer">
+              Videos
+            </div>
+            <div className=" flex flex-1 min-w-[90px] items-center justify-center px-3 py-1.5 bg-background/10 text-background/70 rounded-lg text-sm hover:bg-background/20 transition-colors cursor-pointer">
+              Research
+            </div>
+          </div> */}
 
           {/* Insights List */}
           <div className="space-y-6">
