@@ -14,18 +14,38 @@ const InsightPreviewSection = () => {
           </div>
 
           {/* Tag Filters */}
-          <div className="flex space-x-3 mb-8">
-            <div className="px-3 py-1.5 bg-primary text-primary-foreground rounded-lg text-sm font-medium">
+          {/* <div className="flex flex-wrap gap-3 mb-8 items-center ">
+            <div className=" flex flex-1 min-w-[90px] items-center justify-center px-3 py-1.5 bg-primary text-primary-foreground rounded-lg text-sm font-medium">
               All
             </div>
-            <div className="px-3 py-1.5 bg-background/10 text-background/70 rounded-lg text-sm hover:bg-background/20 transition-colors cursor-pointer">
+            <div className=" flex flex-1 min-w-[90px] items-center justify-center px-3 py-1.5 bg-background/10 text-background/70 rounded-lg text-sm hover:bg-background/20 transition-colors cursor-pointer">
               Articles
             </div>
-            <div className="px-3 py-1.5 bg-background/10 text-background/70 rounded-lg text-sm hover:bg-background/20 transition-colors cursor-pointer">
+            <div className=" flex flex-1 min-w-[90px] items-center justify-center px-3 py-1.5 bg-background/10 text-background/70 rounded-lg text-sm hover:bg-background/20 transition-colors cursor-pointer">
               Videos
             </div>
-            <div className="px-3 py-1.5 bg-background/10 text-background/70 rounded-lg text-sm hover:bg-background/20 transition-colors cursor-pointer">
+            <div className=" flex flex-1 min-w-[90px] items-center justify-center px-3 py-1.5 bg-background/10 text-background/70 rounded-lg text-sm hover:bg-background/20 transition-colors cursor-pointer">
               Research
+            </div>
+          </div> */}
+
+          <div className="max-w-4xl mx-auto mb-8">
+            <div
+              className="grid gap-3"
+              style={{ gridTemplateColumns: "repeat(auto-fit, minmax(120px, 1fr))" }}
+            >
+              <div className="flex items-center justify-center px-3 py-1.5 bg-primary text-primary-foreground rounded-lg text-sm font-medium">
+                All
+              </div>
+              <div className="flex items-center justify-center px-3 py-1.5 bg-background/10 text-background/70 rounded-lg text-sm hover:bg-background/20 transition-colors cursor-pointer">
+                Articles
+              </div>
+              <div className="flex items-center justify-center px-3 py-1.5 bg-background/10 text-background/70 rounded-lg text-sm hover:bg-background/20 transition-colors cursor-pointer">
+                Videos
+              </div>
+              <div className="flex items-center justify-center px-3 py-1.5 bg-background/10 text-background/70 rounded-lg text-sm hover:bg-background/20 transition-colors cursor-pointer">
+                Research
+              </div>
             </div>
           </div>
 
@@ -64,7 +84,7 @@ const InsightPreviewSection = () => {
                 </p>
                 <div className="flex space-x-2">
                   {insight.tags.map((tag, tagIndex) => (
-                    <span 
+                    <span
                       key={tagIndex}
                       className="px-2 py-1 bg-background/10 text-background/70 rounded text-xs"
                     >
