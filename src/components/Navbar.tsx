@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [activeSection, setActiveSection] = useState('home');
@@ -83,7 +84,7 @@ const Navbar = () => {
               onClick={() => scrollToSection('home')}
               className="text-xl font-bold"
             >
-              TLDRify
+              <Link to='/'>TLDRify</Link>
             </button>
           </div>
 
@@ -132,12 +133,16 @@ const Navbar = () => {
 
           {/* CTA */}
           <div className="flex items-center space-x-4">
-            <Button variant="ghost" size="sm" className="hidden sm:inline-flex">
-              Sign in
+          <Button asChild variant="ghost" size="sm" className="hidden sm:inline-flex">
+          <Link to="/signin">Sign in</Link>
             </Button>
+
+
+
             <Button size="sm">
-              Get Started
+              <Link to="/signup">Get Started</Link>
             </Button>
+            
           </div>
         </div>
       </div>
