@@ -1,5 +1,8 @@
 # 🧠 TLDRify
 
+Join the Discord Server for better communication and issue solving.
+https://discord.gg/SdcTSk8Z
+
 > Paste any link. Get the key insights.  
 TLDRify is a sleek, minimal web app that summarizes and organizes content from YouTube, articles, PDFs, tweets, and more — using AI.
 
