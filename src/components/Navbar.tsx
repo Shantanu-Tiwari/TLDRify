@@ -124,19 +124,6 @@ const Navbar = () => {
               }`}
             >
               Pricing
-            </a>
-            <a 
-              href="/about" 
-              className="text-sm text-muted-foreground hover:text-foreground transition-colors duration-150"
-            >
-              About
-            </a>
-            <a 
-              href="/privacy" 
-              className="text-sm text-muted-foreground hover:text-foreground transition-colors duration-150"
-            >
-              Privacy
-            </a>
               {activeSection === 'pricing' && (
                 <div className="absolute -bottom-1 left-0 right-0 h-0.5 bg-primary rounded-full" />
               )}
@@ -145,14 +132,6 @@ const Navbar = () => {
 
           {/* CTA */}
           <div className="flex items-center space-x-4">
-            <a
-              href="https://github.com/Shantanu-Tiwari/TLDRify"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-sm text-muted-foreground hover:text-foreground transition-colors duration-150 hidden sm:inline-flex"
-            >
-              GitHub
-            </a>
             <Button variant="ghost" size="sm" className="hidden sm:inline-flex">
               Sign in
             </Button>
