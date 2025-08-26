@@ -48,6 +48,8 @@ TLDRify is a sleek, minimal web app that summarizes and organizes content from Y
 - **Home** (`/`) - Main landing page with features and CTA
 - **About** (`/about`) - Information about TLDRify, our mission, and story
 - **Privacy** (`/privacy`) - Privacy policy and data handling information
+- **SignUp** (`/signup`) - Registration Page to Register User
+- **SignIn** (`/signin`) - Login Page for Already Registerted User
 
 ## 🚀 Getting Started
 
