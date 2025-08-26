@@ -128,6 +128,9 @@ const Navbar = () => {
                 <div className="absolute -bottom-1 left-0 right-0 h-0.5 bg-primary rounded-full" />
               )}
             </button>
+            <button className="text-sm relative">
+              <Link to="/about">About</Link>
+            </button>
           </div>
 
           {/* CTA */}
