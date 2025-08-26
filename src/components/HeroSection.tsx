@@ -1,13 +1,22 @@
+import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Link } from "lucide-react";
+import { ArrowRight, Link as LinkIcon } from "lucide-react";
+import {
+  Dialog,
+  DialogContent,
+  DialogHeader,
+  DialogTitle,
+} from "@/components/ui/dialog";
 
 const HeroSection = () => {
+  const [open, setOpen] = useState(false);
+
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
     if (element) {
       element.scrollIntoView({
-        behavior: 'smooth',
-        block: 'start',
+        behavior: "smooth",
+        block: "start",
       });
     }
   };
@@ -26,15 +35,15 @@ const HeroSection = () => {
                 TLDRify gives you the key insights from any link — YouTube, PDFs, Tweets, articles, and more.
               </p>
             </div>
-            
+
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button size="lg" className="font-medium">
+              <Button size="lg" className="font-medium" onClick={() => setOpen(true)}>
                 Try TLDRify
               </Button>
-              <Button 
-                variant="link" 
+              <Button
+                variant="link"
                 className="font-medium p-0 h-auto underline-offset-8"
-                onClick={() => scrollToSection('how-it-works')}
+                onClick={() => scrollToSection("how-it-works")}
               >
                 How it works
               </Button>
@@ -46,27 +55,29 @@ const HeroSection = () => {
             <div className="bg-surface-soft border border-border/50 rounded-2xl p-8 w-full max-w-3xl">
               <div className="space-y-6">
                 <div className="relative">
-                  <Link className="absolute left-4 top-1/2 transform -translate-y-1/2 w-5 h-5 text-muted-foreground" />
-                  <input 
-                    type="text" 
+                  <LinkIcon className="absolute left-4 top-1/2 transform -translate-y-1/2 w-5 h-5 text-muted-foreground" />
+                  <input
+                    type="text"
                     placeholder="Paste any YouTube, article, or PDF link..."
                     className="w-full h-14 pl-12 pr-4 bg-background border border-border rounded-xl text-sm placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary/30 transition-all duration-150"
                   />
                 </div>
-                
+
                 <Button className="w-full" size="lg">
                   <span>Summarize</span>
                   <ArrowRight className="w-4 h-4 ml-2" />
                 </Button>
-                
+
                 <div className="pt-4 border-t border-border/30">
                   <p className="text-xs text-muted-foreground mb-3">Try with:</p>
                   <div className="space-y-2">
                     <div className="text-xs text-muted-foreground bg-background/50 rounded-lg p-3 border border-border/30">
-                      <span className="text-primary font-medium">YouTube:</span> https://youtube.com/watch?v=...
+                      <span className="text-primary font-medium">YouTube:</span>{" "}
+                      https://youtube.com/watch?v=...
                     </div>
                     <div className="text-xs text-muted-foreground bg-background/50 rounded-lg p-3 border border-border/30">
-                      <span className="text-primary font-medium">Article:</span> https://techcrunch.com/article...
+                      <span className="text-primary font-medium">Article:</span>{" "}
+                      https://techcrunch.com/article...
                     </div>
                   </div>
                 </div>
@@ -75,6 +86,26 @@ const HeroSection = () => {
           </div>
         </div>
       </div>
+
+      {/* Popup (Dialog) */}
+      <Dialog open={open} onOpenChange={setOpen}>
+        <DialogContent className="sm:max-w-[800px]">
+          <DialogHeader>
+            <DialogTitle>See TLDRify in Action</DialogTitle>
+          </DialogHeader>
+          <div className="aspect-video">
+            <iframe
+              width="100%"
+              height="100%"
+              src="1.mp4" // replace with your demo video link
+              title="TLDRify Demo"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            ></iframe>
+          </div>
+        </DialogContent>
+      </Dialog>
     </section>
   );
 };
