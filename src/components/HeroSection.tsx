@@ -1,13 +1,29 @@
+import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Link } from "lucide-react";
+import { ArrowRight, Link as LinkIcon } from "lucide-react";
 
 const HeroSection = () => {
+  const [url, setUrl] = useState("");
+  const [error, setError] = useState("");
+  const navigate = useNavigate();
+
+  const handleSummarize = () => {
+    if (!url.trim()) {
+      setError("Enter the URL first");
+    } else {
+      setError("");
+      // redirect with URL as query param
+      navigate(`/signup?url=${encodeURIComponent(url)}`);
+    }
+  };
+
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
     if (element) {
       element.scrollIntoView({
-        behavior: 'smooth',
-        block: 'start',
+        behavior: "smooth",
+        block: "start",
       });
     }
   };
@@ -23,18 +39,19 @@ const HeroSection = () => {
                 Summarize anything. Instantly.
               </h1>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                TLDRify gives you the key insights from any link — YouTube, PDFs, Tweets, articles, and more.
+                TLDRify gives you the key insights from any link — YouTube,
+                PDFs, Tweets, articles, and more.
               </p>
             </div>
-            
+
             <div className="flex flex-col sm:flex-row gap-4">
               <Button size="lg" className="font-medium">
                 Try TLDRify
               </Button>
-              <Button 
-                variant="link" 
+              <Button
+                variant="link"
                 className="font-medium p-0 h-auto underline-offset-8"
-                onClick={() => scrollToSection('how-it-works')}
+                onClick={() => scrollToSection("how-it-works")}
               >
                 How it works
               </Button>
@@ -46,27 +63,36 @@ const HeroSection = () => {
             <div className="bg-surface-soft border border-border/50 rounded-2xl p-8 w-full max-w-3xl">
               <div className="space-y-6">
                 <div className="relative">
-                  <Link className="absolute left-4 top-1/2 transform -translate-y-1/2 w-5 h-5 text-muted-foreground" />
-                  <input 
-                    type="text" 
+                  <LinkIcon className="absolute left-4 top-1/2 transform -translate-y-1/2 w-5 h-5 text-muted-foreground" />
+                  <input
+                    type="text"
+                    value={url}
+                    onChange={(e) => setUrl(e.target.value)}
                     placeholder="Paste any YouTube, article, or PDF link..."
                     className="w-full h-14 pl-12 pr-4 bg-background border border-border rounded-xl text-sm placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary/30 transition-all duration-150"
                   />
                 </div>
-                
-                <Button className="w-full" size="lg">
-                  <span>Summarize</span>
+
+                {/* Show error if input empty */}
+                {error && <p className="text-red-500 text-sm">{error}</p>}
+
+                <Button className="w-full" size="lg" onClick={handleSummarize}>
+                  Summarize
                   <ArrowRight className="w-4 h-4 ml-2" />
                 </Button>
-                
+
                 <div className="pt-4 border-t border-border/30">
-                  <p className="text-xs text-muted-foreground mb-3">Try with:</p>
+                  <p className="text-xs text-muted-foreground mb-3">
+                    Try with:
+                  </p>
                   <div className="space-y-2">
                     <div className="text-xs text-muted-foreground bg-background/50 rounded-lg p-3 border border-border/30">
-                      <span className="text-primary font-medium">YouTube:</span> https://youtube.com/watch?v=...
+                      <span className="text-primary font-medium">YouTube:</span>{" "}
+                      https://youtube.com/watch?v=...
                     </div>
                     <div className="text-xs text-muted-foreground bg-background/50 rounded-lg p-3 border border-border/30">
-                      <span className="text-primary font-medium">Article:</span> https://techcrunch.com/article...
+                      <span className="text-primary font-medium">Article:</span>{" "}
+                      https://techcrunch.com/article...
                     </div>
                   </div>
                 </div>
