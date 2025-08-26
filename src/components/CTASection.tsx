@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 
 const CTASection = () => {
   return (
@@ -8,7 +9,7 @@ const CTASection = () => {
           Paste a link. Get the idea. Try TLDRify.
         </h2>
         <Button size="lg" className="px-12 font-medium">
-          Get Started
+          <Link to="/signup">Get Started</Link>
         </Button>
       </div>
     </section>
