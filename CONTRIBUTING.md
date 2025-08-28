@@ -20,8 +20,8 @@ This guide will walk you through the entire contribution process, from setting u
 4. [Points & Difficulty Levels](#-points--difficulty-levels)
 5. [Contribution Guidelines](#-contribution-guidelines)
 6. [PR review Process](#-pr-review-process)
-7. [How to Contribute](#-how-to-contribute)
-8. [Need More Help](#-need-more-help)
+7. [How to Contribute](#-how--to-contribute)
+8. [Need More Help](#-need--more-help)
 9. [Attribution](#-attribution)
 10. [Thank you for your contribution](#thank-you-for-your-contribution)
 
@@ -103,8 +103,9 @@ We aim to keep things smooth and transparent:
 
 ![Line](https://user-images.githubusercontent.com/85225156/171937799-8fc9e255-9889-4642-9c92-6df85fb86e82.gif)
 
-<h2 align="center">Need more help? 🤔</h1>
-<p align="center"> You can refer to the following articles on basics of Git and Github and also contact the Project Mentors, in case you are stuck: <br>
+## Need more help? 🤔
+
+<p> You can refer to the following articles on basics of Git and Github and also contact the Project Mentors, in case you are stuck: <br>
   <a href="https://help.github.com/en/desktop/contributing-to-projects/creating-an-issue-or-pull-request">How to create a Issue</a> <br>
   <a href="https://help.github.com/en/github/getting-started-with-github/fork-a-repo">Forking a Repo</a> <br>
   <a href="https://docs.github.com/en/get-started/quickstart/fork-a-repo#cloning-your-forked-repository">Cloning a Repo</a> <br>
