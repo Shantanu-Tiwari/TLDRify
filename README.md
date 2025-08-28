@@ -21,7 +21,19 @@ TLDRify is a sleek, minimal web app that summarizes and organizes content from Y
 
 ## 📸 Preview
 
-> _Add screenshots or a Loom walkthrough here_
+# Landing Page
+<img width="1280" height="2000" alt="image" src="https://github.com/user-attachments/assets/d9503171-eb98-4430-a367-2f505b3cad00" />
+
+
+# Sign In Page
+<img width="800" height="400" alt="image" src="https://github.com/user-attachments/assets/b0fd5db4-d882-44e4-b2d4-8291acc66d49" />
+
+
+# SignUp Page
+<img width="800" height="400" alt="image" src="https://github.com/user-attachments/assets/330813fc-1beb-4946-aab6-872ae5814c95" />
+
+
+
 
 ---
 
@@ -48,6 +60,8 @@ TLDRify is a sleek, minimal web app that summarizes and organizes content from Y
 - **Home** (`/`) - Main landing page with features and CTA
 - **About** (`/about`) - Information about TLDRify, our mission, and story
 - **Privacy** (`/privacy`) - Privacy policy and data handling information
+- **SignUp** (`/signup`) - Registration Page to Register User
+- **SignIn** (`/signin`) - Login Page for Already Registerted User
 
 ## 🚀 Getting Started
 
