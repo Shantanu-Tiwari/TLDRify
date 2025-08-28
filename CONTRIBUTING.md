@@ -21,7 +21,7 @@ This guide will walk you through the entire contribution process, from setting u
 5. [Contribution Guidelines](#-contribution-guidelines)
 6. [PR review Process](#-pr-review-process)
 7. [How to Contribute](#-how-to-contribute)
-8. [Need More Help](#-need--more-help)
+8. [Need More Help](#-need-more-help)
 9. [Attribution](#-attribution)
 10. [Thank you for your contribution](#thank-you-for-your-contribution)
 
@@ -89,7 +89,7 @@ We aim to keep things smooth and transparent:
 
 ![Line](https://user-images.githubusercontent.com/85225156/171937799-8fc9e255-9889-4642-9c92-6df85fb86e82.gif)
 
- ## How to Contribute?
+ ## How to Contribute
 
 - Drop a Star ⭐ in this repo
 - Take a look at the existing [Issues](https://github.com/Shantanu-Tiwari/TLDRify/issues). 
@@ -116,7 +116,7 @@ We aim to keep things smooth and transparent:
 
 ![Line](https://user-images.githubusercontent.com/85225156/171937799-8fc9e255-9889-4642-9c92-6df85fb86e82.gif)
 
-##🏅 Attribution
+## 🏅 Attribution
 
 This **CONTRIBUTING.md** was prepared with ❤️ by **Divya Jain** for **TLDRify** as part of the **GSSoC 2025 program.**
 
@@ -127,6 +127,7 @@ The structure and recommendations follow **GitHub Open Source Guides** and best 
 ## 👍Thank you for your contribution!!
 
 <h4 align="center">
-Thank you for contributing to **TLDRify** 🌟  
+Thank you for contributing to TLDRify 🌟
+ <br>
 We can't wait to see what you build! 🍽️✨
 </h4>
