@@ -2,8 +2,15 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Link as LinkIcon } from "lucide-react";
+import {
+  Dialog,
+  DialogContent,
+  DialogHeader,
+  DialogTitle,
+} from "@/components/ui/dialog";
 
 const HeroSection = () => {
+  const [open, setOpen] = useState(false);
   const [url, setUrl] = useState("");
   const [error, setError] = useState("");
   const navigate = useNavigate();
@@ -13,7 +20,6 @@ const HeroSection = () => {
       setError("Enter the URL first");
     } else {
       setError("");
-      // redirect with URL as query param
       navigate(`/signup?url=${encodeURIComponent(url)}`);
     }
   };
@@ -45,7 +51,11 @@ const HeroSection = () => {
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button size="lg" className="font-medium">
+              <Button
+                size="lg"
+                className="font-medium"
+                onClick={() => setOpen(true)}
+              >
                 Try TLDRify
               </Button>
               <Button
@@ -73,7 +83,6 @@ const HeroSection = () => {
                   />
                 </div>
 
-                {/* Show error if input empty */}
                 {error && <p className="text-red-500 text-sm">{error}</p>}
 
                 <Button className="w-full" size="lg" onClick={handleSummarize}>
@@ -101,6 +110,26 @@ const HeroSection = () => {
           </div>
         </div>
       </div>
+
+      {/* Popup (Dialog) */}
+      <Dialog open={open} onOpenChange={setOpen}>
+        <DialogContent className="sm:max-w-[800px]">
+          <DialogHeader>
+            <DialogTitle>See TLDRify in Action</DialogTitle>
+          </DialogHeader>
+          <div className="aspect-video">
+            <iframe
+              width="100%"
+              height="100%"
+              src="1.mp4" // replace with your demo video link
+              title="TLDRify Demo"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            ></iframe>
+          </div>
+        </DialogContent>
+      </Dialog>
     </section>
   );
 };
