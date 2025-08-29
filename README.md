@@ -226,6 +226,7 @@ This project is licensed under the MIT License - see the [`License`](https://git
   <a href="https://github.com/Shantanu-Tiwari/TLDRify/members">
     <img src="https://reporoster.com/forks/Shantanu-Tiwari/TLDRify?type=svg&limit=100&names=false" alt="Forkers" />
   </a>
+</div>
 
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
 
