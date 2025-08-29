@@ -109,7 +109,8 @@ TLDRify is a sleek, minimal web app that summarizes and organizes content from Y
 | Hosting    | Vercel                                        |
 | Optional   | LangChain for semantic search                 |
 
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
+
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%"
 
 **📱 Pages**
 
@@ -118,7 +119,7 @@ TLDRify is a sleek, minimal web app that summarizes and organizes content from Y
 - **Privacy** (`/privacy`) - Privacy policy and data handling information
 - **SignUp** (`/signup`) - Registration Page to Register User
 - **SignIn** (`/signin`) - Login Page for Already Registerted User
-
+     
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
 
 **🚀 Getting Started**
