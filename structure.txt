@@ -1,0 +1,116 @@
+.
+├── bun.lockb
+├── CODE_OF_CONDUCT.md
+├── components.json
+├── CONTRIBUTING.md
+├── eslint.config.js
+├── index.html
+├── LICENSE.md
+├── package.json
+├── package-lock.json
+├── postcss.config.js
+├── public
+│   ├── 1.mp4
+│   ├── favicon.ico
+│   │   ├── apple-touch-icon.png
+│   │   ├── favicon-96x96.png
+│   │   ├── favicon.ico
+│   │   ├── favicon.svg
+│   │   ├── site.webmanifest
+│   │   ├── web-app-manifest-192x192.png
+│   │   └── web-app-manifest-512x512.png
+│   ├── placeholder.svg
+│   └── robots.txt
+├── README.md
+├── src
+│   ├── App.css
+│   ├── App.tsx
+│   ├── assets
+│   │   ├── gssoc logo.png
+│   │   └── hero-mockup.jpg
+│   ├── components
+│   │   ├── CTASection.tsx
+│   │   ├── Footer.tsx
+│   │   ├── HeroSection.tsx
+│   │   ├── HowItWorksSection.tsx
+│   │   ├── InsightPreviewSection.tsx
+│   │   ├── LoginPage.tsx
+│   │   ├── Navbar.tsx
+│   │   ├── RegPage.tsx
+│   │   ├── ScrollToTopButton.tsx
+│   │   ├── SupportedContentSection.tsx
+│   │   ├── ui
+│   │   │   ├── accordion.tsx
+│   │   │   ├── alert-dialog.tsx
+│   │   │   ├── alert.tsx
+│   │   │   ├── aspect-ratio.tsx
+│   │   │   ├── avatar.tsx
+│   │   │   ├── badge.tsx
+│   │   │   ├── breadcrumb.tsx
+│   │   │   ├── button.tsx
+│   │   │   ├── calendar.tsx
+│   │   │   ├── card.tsx
+│   │   │   ├── carousel.tsx
+│   │   │   ├── chart.tsx
+│   │   │   ├── checkbox.tsx
+│   │   │   ├── collapsible.tsx
+│   │   │   ├── command.tsx
+│   │   │   ├── context-menu.tsx
+│   │   │   ├── dialog.tsx
+│   │   │   ├── drawer.tsx
+│   │   │   ├── dropdown-menu.tsx
+│   │   │   ├── form.tsx
+│   │   │   ├── hover-card.tsx
+│   │   │   ├── input-otp.tsx
+│   │   │   ├── input.tsx
+│   │   │   ├── label.tsx
+│   │   │   ├── menubar.tsx
+│   │   │   ├── navigation-menu.tsx
+│   │   │   ├── pagination.tsx
+│   │   │   ├── popover.tsx
+│   │   │   ├── progress.tsx
+│   │   │   ├── radio-group.tsx
+│   │   │   ├── resizable.tsx
+│   │   │   ├── scroll-area.tsx
+│   │   │   ├── select.tsx
+│   │   │   ├── separator.tsx
+│   │   │   ├── sheet.tsx
+│   │   │   ├── sidebar.tsx
+│   │   │   ├── skeleton.tsx
+│   │   │   ├── slider.tsx
+│   │   │   ├── sonner.tsx
+│   │   │   ├── switch.tsx
+│   │   │   ├── table.tsx
+│   │   │   ├── tabs.tsx
+│   │   │   ├── textarea.tsx
+│   │   │   ├── toaster.tsx
+│   │   │   ├── toast.tsx
+│   │   │   ├── toggle-group.tsx
+│   │   │   ├── toggle.tsx
+│   │   │   ├── tooltip.tsx
+│   │   │   └── use-toast.ts
+│   │   └── WhyTLDRifySection.tsx
+│   ├── hooks
+│   │   ├── use-active-section.ts
+│   │   ├── use-mobile.tsx
+│   │   └── use-toast.ts
+│   ├── index.css
+│   ├── lib
+│   │   └── utils.ts
+│   ├── main.tsx
+│   ├── pages
+│   │   ├── About.tsx
+│   │   ├── Index.tsx
+│   │   ├── NotFound.tsx
+│   │   ├── Privacy.tsx
+│   │   ├── SignIn.tsx
+│   │   └── SignUp.tsx
+│   └── vite-env.d.ts
+├── structure.txt
+├── tailwind.config.ts
+├── tsconfig.app.json
+├── tsconfig.json
+├── tsconfig.node.json
+└── vite.config.ts
+
+10 directories, 104 files
